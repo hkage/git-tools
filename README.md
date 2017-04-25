@@ -5,6 +5,7 @@ git-lost-commits will look for commits that were pushed to the git server but ar
 ## Requirements
 
 * Python 3
+* Flake8
 * git installed
 
 ## git hooks
@@ -13,6 +14,7 @@ git-lost-commits will look for commits that were pushed to the git server but ar
 
 This is a git pre-commit hook, that will do some Python/Django specific validation checks:
 
+* Flake8 checks for the changed files
 * Check for Python debug statements (ipbd/pdb)
 * Check for fuzzy translations in PO files
 
